@@ -5,14 +5,11 @@ datasource:
   username: "local"
   password: "local"
 
-
 volume-path:
   # for windows
-  persistent-volume-data: "C:\\volume\\local\\pv\\"
-  pod-volume-data: "C:\\volume\\local\\pod\\"
   # for mac
-#  persistent-volume-data: "/users/<username>/IdeaProjects/volume/local/pv/"
-#  pod-volume-data: "/users/<username>/IdeaProjects/volume/local/pod/"
+  persistent-volume-data: "/Users/chungchung/my/tools/k8s/volume/local/pv/"
+  pod-volume-data: "/Users/chungchung/my/tools/k8s/volume/local/pod/"
 
 # Pod 정보 파일 (Pod의 Volume과 env로 주입)
 downward:
